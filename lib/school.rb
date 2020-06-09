@@ -18,6 +18,7 @@ class School
     @roster[grade]
   end
 
+<<<<<<< HEAD
   # def sort
   #   sorted = {}
   #   @roster.each do |grade, student|
@@ -29,6 +30,11 @@ class School
   def sort
     @roster.each do |grade, student|
       student.sort!
+=======
+  def sort
+    @roster.each do |grade|
+      grade.sort_by{|key, v| v}
+>>>>>>> 9de3c0b4598f4e62e84b22634a86e3e1a4ac6b63
     end
   end 
 
